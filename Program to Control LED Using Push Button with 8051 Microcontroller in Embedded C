@@ -1,0 +1,18 @@
+//Program to Control LED Using Push Button with 8051 Microcontroller in Embedded C
+
+
+#include <reg51.h>
+
+sbit LED = P2^0;
+sbit BUTTON = P1^0;
+
+void main()
+{
+    while(1)
+    {
+        if(BUTTON == 0)   // Button pressed (Active LOW)
+            LED = 0;      // LED ON
+        else
+            LED = 1;      // LED OFF
+    }
+}
