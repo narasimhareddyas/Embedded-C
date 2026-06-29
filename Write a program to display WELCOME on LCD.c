@@ -70,7 +70,7 @@ void main(void)
 
     lcd_cmd(0x80);       
 
-    lcd_string("SNEHA I LOVE YOU");
+    lcd_string("WELCOME");
 
     while(1)
     {
